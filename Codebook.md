@@ -24,41 +24,41 @@ std(): Standard deviation
 
 ##The variables used to complete the assignment are as follows:
 
-path_dataset -> Get repository file path of the dataset
-dataActivityTest -> Read data from the files into the Activity - Test (Test data)
-dataSubjectTest-> Read data from the files into the Subject- Test (Test data)
-dataFeaturesTest -> Read data from the files into the Features-Test (Test data)
-dataActivityTrain -> Read data from the files into the Activity - Train (Training data)
-dataSubjectTrain-> Read data from the files into the Subject- Train  (Training data)
-dataFeaturesTrain-> Read data from the files into the Features-Train  (Training data)
-dataActivity -> will  rbind dataActivityTrain and dataActivityTest
-dataSubject <- will rbind dataSubjectTrain and dataSubjectTest
-dataFeatures <- will rbind dataFeaturesTrain and dataFeaturesTest
-dataFeaturesNames  -> will retrieve the feature names
-dataCombined  -> will cbind dataSubject and dataActivity
-Data -> will cbind dataFeatures and dataCombined
-subdataFeaturesNames -> will extract only the measurements on the mean and standard deviation
-selectedNames -> is a character variable containing the data that needs to be selected
-Data -> is a dataframe containing the resultant data
-activityLabels -> Read file to get the activityLabels
-currentActivity -> is a numeric and is used only for initialization
-Data2  -> is a dataframe which contains the extracted data on the mean and standard deviation for each measurement
+* path_dataset -> Get repository file path of the dataset
+* dataActivityTest -> Read data from the files into the Activity - Test (Test data)
+* dataSubjectTest-> Read data from the files into the Subject- Test (Test data)
+* dataFeaturesTest -> Read data from the files into the Features-Test (Test data)
+* dataActivityTrain -> Read data from the files into the Activity - Train (Training data)
+* dataSubjectTrain-> Read data from the files into the Subject- Train  (Training data)
+* dataFeaturesTrain-> Read data from the files into the Features-Train  (Training data)
+* dataActivity -> will  rbind dataActivityTrain and dataActivityTest
+* dataSubject <- will rbind dataSubjectTrain and dataSubjectTest
+* dataFeatures <- will rbind dataFeaturesTrain and dataFeaturesTest
+* dataFeaturesNames  -> will retrieve the feature names
+* dataCombined  -> will cbind dataSubject and dataActivity
+* Data -> will cbind dataFeatures and dataCombined
+* subdataFeaturesNames -> will extract only the measurements on the mean and standard deviation
+* selectedNames -> is a character variable containing the data that needs to be selected
+* Data -> is a dataframe containing the resultant data
+* activityLabels -> Read file to get the activityLabels
+* currentActivity -> is a numeric and is used only for initialization
+* Data2  -> is a dataframe which contains the extracted data on the mean and standard deviation for each measurement
 
 
 ##Approach for Getting the Tidy data:
 
-Step 1 -> Get repository file path of the dataset
-Step 2 -> Read data from the files into the Activity, Subject and Features variables
-Step 3 -> Look at the properties of the above variables
-Step 4 -> Merge the training and test data set to create one single datase
-Step 5 -> Set names to the variables used
-Step 6 -> Merge columns to get the data frame Data for all of the merged data
-Step 7 -> Extract only the measurements on the mean and standard deviation for each measurement
-Step 8 -> Subset the data frame Data by selected names of Features
-Step 9 -> Again verify the data by using summary or str
-Step 10 -> Use descriptive activity names to name the activities in the data set. 
-Step 11 -> Label data with descriptive variable names and verify
-Step 12 -> Create a second independent tidy data set and output the result
+* Step 1 -> Get repository file path of the dataset
+* Step 2 -> Read data from the files into the Activity, Subject and Features variables
+* Step 3 -> Look at the properties of the above variables
+* Step 4 -> Merge the training and test data set to create one single datase
+* Step 5 -> Set names to the variables used
+* Step 6 -> Merge columns to get the data frame Data for all of the merged data
+* Step 7 -> Extract only the measurements on the mean and standard deviation for each measurement
+* Step 8 -> Subset the data frame Data by selected names of Features
+* Step 9 -> Again verify the data by using summary or str
+* Step 10 -> Use descriptive activity names to name the activities in the data set. 
+* Step 11 -> Label data with descriptive variable names and verify
+* Step 12 -> Create a second independent tidy data set and output the result
 
 The final dataset is a dataframe stored in Data2 variable, which has 180 observations of 68 variables and approximately 101.9 kb in size
 The Data2 variable data has been exported to a tab limited txt and saved as tidydata.txt
