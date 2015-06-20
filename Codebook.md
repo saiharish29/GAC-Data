@@ -45,23 +45,6 @@ std(): Standard deviation
 * Data2  -> is a dataframe which contains the extracted data on the mean and standard deviation for each measurement
 
 
-##Approach for Getting the Tidy data:
-
-* Step 1 -> Get repository file path of the dataset
-* Step 2 -> Read data from the files into the Activity, Subject and Features variables
-* Step 3 -> Look at the properties of the above variables
-* Step 4 -> Merge the training and test data set to create one single datase
-* Step 5 -> Set names to the variables used
-* Step 6 -> Merge columns to get the data frame Data for all of the merged data
-* Step 7 -> Extract only the measurements on the mean and standard deviation for each measurement
-* Step 8 -> Subset the data frame Data by selected names of Features
-* Step 9 -> Again verify the data by using summary or str
-* Step 10 -> Use descriptive activity names to name the activities in the data set. 
-* Step 11 -> Label data with descriptive variable names and verify
-* Step 12 -> Create a second independent tidy data set and output the result
-
-The final dataset is a dataframe stored in Data2 variable, which has 180 observations of 68 variables and approximately 101.9 kb in size
-The Data2 variable data has been exported to a tab limited txt and saved as tidydata.txt
 
 
 
