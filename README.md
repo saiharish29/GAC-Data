@@ -36,7 +36,7 @@ This tab-delimited dataset can be found in the tidy.txt file.
 Lastly, the script will create a tidy data set containing the means of all the columns per test subject and per activity.
 This tidy dataset will be written to a tab-delimited file called tidy.txt, which can also be found in this repository.
  
- ##Approach for Getting the Tidy data-------------------
+ ##Approach for Getting the Tidy data
  -------------------------------------
 
 * Step 1 -> Get repository file path of the dataset
